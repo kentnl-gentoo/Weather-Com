@@ -15,7 +15,7 @@
 #
 no warnings;
 use Test::More tests => 62;
-require 't/TestData.pm';
+require './t/TestData.pm';
 
 BEGIN {
 	use_ok('Weather::Com::Finder');

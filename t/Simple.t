@@ -16,7 +16,7 @@
 no warnings;
 use Data::Dumper;
 use Test::More tests => 2;
-require 't/TestData.pm';
+require './t/TestData.pm';
 
 BEGIN {
 	use_ok('Weather::Com::Simple');

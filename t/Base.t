@@ -16,7 +16,7 @@
 #
 no warnings;
 use Test::More tests => 6;
-require 't/TestData.pm';
+require './t/TestData.pm';
 
 BEGIN {
 	use_ok('Weather::Com::Base');
