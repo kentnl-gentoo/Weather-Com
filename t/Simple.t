@@ -14,8 +14,15 @@
 # initialization
 #
 no warnings;
+BEGIN {
+  if ( $ENV{NO_NETWORK_TESTING} ) {
+    print "1..0 # SKIP NO_NETWORK_TESTING set";
+    exit 0;
+  }
+  require Test::More;
+  Test::More->import( tests => 2 );
+}
 use Data::Dumper;
-use Test::More tests => 2;
 require './t/TestData.pm';
 
 BEGIN {
